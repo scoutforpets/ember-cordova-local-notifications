@@ -1,3 +1,5 @@
+'use strict';
+
 /* eslint-env node */
 const ecInstaller = require('ember-cordova-installer');
 
@@ -7,6 +9,6 @@ module.exports = {
   normalizeEntityName: function() {},
 
   afterInstall: function() {
-    ecInstaller.install('https://github.com/Telerik-Verified-Plugins/LocalNotification', this);
+    return ecInstaller.install('https://github.com/Telerik-Verified-Plugins/LocalNotification', this);
   }
 };

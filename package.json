@@ -1,12 +1,16 @@
 {
   "name": "ember-cordova-local-notifications",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "cordova local notifications for ember-cordova",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "James Dixon",
+    "email": "james@scoutforpets.com",
+    "url": "https://scoutforpets.com"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -39,7 +43,6 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.13.0",
-    "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
