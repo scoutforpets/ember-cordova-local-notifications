@@ -17,7 +17,7 @@ export default Service.extend({
             if (!isEmpty(this.get('defaults'))) {
                 this._plugin.setDefaults(this.get('defaults'));
             }
-            
+
         }, false);
     },
 
@@ -27,7 +27,7 @@ export default Service.extend({
             this._plugin.schedule(notifications);
         }
         else {
-            this._error('schedule fucked');
+            this._error('nothing to schedule');
         }
     },
 
@@ -42,7 +42,7 @@ export default Service.extend({
             this._plugin.update(options);
         }
         else {
-            this._error('schedule fucked');
+            this._error('nothing to schedule');
         }
     },
 
@@ -60,9 +60,9 @@ export default Service.extend({
     },
 
     clear(ids) {
-        if (!ids) { reject(); }
-
         return new Promise((resolve, reject) => {
+            if (!ids) { reject(); }
+
             this._plugin.clear(ids, () => resolve());
         })
     },
