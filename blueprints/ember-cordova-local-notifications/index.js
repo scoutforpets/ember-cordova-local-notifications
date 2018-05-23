@@ -9,6 +9,6 @@ module.exports = {
   normalizeEntityName: function() {},
 
   afterInstall: function() {
-    return ecInstaller.install('https://github.com/katzer/cordova-plugin-local-notifications', this);
+    return ecInstaller.install('https://github.com/katzer/cordova-plugin-local-notifications#0.9.0-beta.3', this);
   }
 };
